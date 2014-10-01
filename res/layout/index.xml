@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公告" />
+    
+    <Button
+        android:id="@+id/Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail" />
+    
+    <Button
+        android:id="@+id/Repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="報修" />
+    
+    <Button
+        android:id="@+id/Inquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="報修查尋" />
+
+</LinearLayout>

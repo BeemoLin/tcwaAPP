@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tw.brad.android.apps.eHomeApp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_small"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="tw.brad.android.apps.eHomeApp.Welcome"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="NewRegister"
+            android:screenOrientation="landscape"></activity>
+        <service android:name="NoticeService"></service>
+        <receiver android:name=".BootBroadcastReceiver"
+            	android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            	android:enabled="true">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+        <receiver android:name="BootBroadcastReceiver"></receiver><activity android:name="Index"></activity>
+        
+        <activity android:name="Repair"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name="Announcement"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name="Mail"
+            android:screenOrientation="landscape">
+        </activity>
+        <service android:name="CommunityService"></service>
+        <service android:name="ShowPicService"></service>
+        <activity android:name="WebViewActivity"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>

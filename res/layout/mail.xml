@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffffff" />
+    <!--
+    <TableRow android:minHeight="30dip" android:gravity="center">
+        
+        <View 
+            android:layout_width="0.5dip" 
+            android:layout_height="fill_parent" 
+            android:background="#ffffff" 
+        />
+        
+        <TextView 
+        android:id="@+id/Number" 
+        android:minWidth="45dip"
+		android:minHeight="30dip"
+        android:background="#3d3d3d"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:text="封數"
+        />
+        
+        <View 
+            android:layout_width="0.5dip" 
+            android:layout_height="fill_parent" 
+            android:background="#ffffff" 
+        />
+        
+        <TextView 
+        android:id="@+id/Sender"       
+		android:minHeight="30dip"
+        android:background="#3d3d3d"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:text="寄件人"
+        />
+        
+        <View 
+            android:layout_width="0.5dip" 
+            android:layout_height="fill_parent" 
+            android:background="#ffffff" 
+        />
+        
+        <TextView 
+        android:id="@+id/Package" 
+		android:minHeight="30dip"
+        android:background="#3d3d3d"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:text="郵件類型"
+        />
+        
+        <View 
+            android:layout_width="0.5dip" 
+            android:layout_height="fill_parent" 
+            android:background="#ffffff" 
+        />
+        
+        <TextView 
+        android:id="@+id/Company"
+		android:minHeight="30dip"
+        android:background="#3d3d3d"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:text="貨運公司"
+        />
+        
+        <View 
+            android:layout_width="0.5dip" 
+            android:layout_height="fill_parent" 
+            android:background="#ffffff" 
+        />
+        
+        <TextView 
+        android:id="@+id/Date"
+        android:minHeight="30dip"       
+        android:background="#3d3d3d"        
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:text="寄件日期"
+        />
+        
+
+
+    </TableRow>
+    -->
+
+ <TextView
+     android:id="@+id/txtRecieveName"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:gravity="center_vertical|center_horizontal"
+     android:text="收件人"
+     android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtMailType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="150dp"
+        android:text="信件類別"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtRecieveDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="收件日期"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvwMail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="27dp" >
+		
+    </ListView>
+
+    <TextView
+        android:id="@+id/txtSendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/txtMailType"
+        android:text="寄件人"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtRecieveName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-5dp"
+        android:text="---------------------------------------------------"
+        android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtRecieveName"
+        android:layout_marginTop="-5dp"
+        android:text="----------------------------------------------------------------------------------------" />
+
+</RelativeLayout>

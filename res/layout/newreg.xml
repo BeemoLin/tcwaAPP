@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    <TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="24sp"
+	    android:textStyle="bold|italic"
+	    android:text="社區帳號"
+        />
+    <EditText
+        android:id="@+id/username" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="請輸入帳號..."
+	    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+	    android:singleLine="true"
+	    android:maxLength="10"
+	    android:imeOptions="actionNext"
+        />
+    <TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="24sp"
+	    android:textStyle="bold|italic"
+	    android:text="社區密碼"
+        />
+    
+    <EditText
+        android:id="@+id/passwd" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="請輸入密碼..."
+	    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+	    android:singleLine="true"
+	    android:password="true"
+	    android:maxLength="10"
+	    android:imeOptions="actionNext"
+        />
+
+	<View
+	    android:layout_width="wrap_content"
+	    android:layout_height="10dp"
+	    android:layout_marginTop="0dp"
+	    android:background="#0000ff"
+	    android:visibility="invisible" />
+
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+        >
+
+        <Button
+            android:id="@+id/newreg_ok"
+            style="@style/btnStylelivid_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:text="確定" />
+
+        <Button
+            android:id="@+id/newreg_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            style="@style/btnStylelivid_brown"
+            android:text="重置" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手機號碼(可提供緊急聯絡)"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="請輸入手機號碼..."
+        android:imeOptions="actionDone"
+        android:maxLength="15"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>
